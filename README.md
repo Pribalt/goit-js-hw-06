@@ -1,1 +1,1 @@
-JavaScript 2.0
+goit-js-hw-06
