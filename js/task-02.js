@@ -3,9 +3,9 @@ const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Con
 const ingredientsItemEl = document.querySelector('#ingredients');
 
 const makeIngredientsInItem = ingredients => {
-   return ingredients.map(ingredient => {
+   return ingredients.map(el => {
       const itemEl = document.createElement('li');
-      itemEl.textContent = `${ingredient}`;
+      itemEl.textContent = `${el}`;
       itemEl.classList.add('item');
       return itemEl;
    });
