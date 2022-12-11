@@ -1,16 +1,16 @@
-const counters = document.querySelectorAll('#counter button');
-const addListenerBtn = document.querySelector('[data-action="increment"]');
-const removeListenerBtn = document.querySelector('[data-action="decrement"]');
-const valueCounter = document.querySelector('#value');
+const countersEl = document.querySelectorAll('#counter button');
+const addListenerBtnEl = document.querySelector('[data-action="increment"]');
+const removeListenerBtnEl = document.querySelector('[data-action="decrement"]');
+const valueCounterEl = document.querySelector('#value');
 let counterValue = 0;
 
-counters.forEach(el => {
+countersEl.forEach(el => {
    el.addEventListener('click', e => {
-      if (el === removeListenerBtn) {
+      if (el === removeListenerBtnEl) {
          counterValue -= 1;
-      } else if (el === addListenerBtn) {
+      } else if (el === addListenerBtnEl) {
          counterValue += 1;
       }
-      valueCounter.textContent = counterValue;
+      valueCounterEl.textContent = counterValue;
    });
 });
