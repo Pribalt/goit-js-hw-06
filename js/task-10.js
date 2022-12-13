@@ -13,8 +13,9 @@ function onButtonClickCreateBoxes() {
 function createBoxes(amount) {
    for (let i = 0; i < amount; i += 1) {
       const divInBoxesEl = document.createElement('div');
-      divInBoxesEl.style.height = 30 + 10 * i + 'px';
-      divInBoxesEl.style.width = divInBoxesEl.style.height;
+      const size = 30 + 10 * i + 'px';
+      divInBoxesEl.style.height = size;
+      divInBoxesEl.style.width = size;
       divInBoxesEl.style.backgroundColor = `${getRandomHexColor()}`;
       divBoxesEl.append(divInBoxesEl);
    }
